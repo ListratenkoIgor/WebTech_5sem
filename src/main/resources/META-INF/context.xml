@@ -1,0 +1,11 @@
+<Context>
+    <Resource name="jdbc/library"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="root"
+              password="root"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://192.168.99.100:3306/library"
+              maxActive="15"
+              maxIdle="3"/>
+</Context>
