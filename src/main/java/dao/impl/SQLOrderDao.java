@@ -16,6 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SQLOrderDao implements OrderDao {
+    /**
+     * Adds order to table
+     * @param order order
+     * @throws DAOException default
+     */
     @Override
     public void addOrder(Order order) throws DAOException {
         ConnectionPool pool = null;
@@ -38,6 +43,11 @@ public class SQLOrderDao implements OrderDao {
         }
     }
 
+    /**
+     * Deletes order from table
+     * @param order order
+     * @throws DAOException default
+     */
     @Override
     public void deleteOrder(Order order) throws DAOException {
         ConnectionPool pool = null;
@@ -59,6 +69,11 @@ public class SQLOrderDao implements OrderDao {
         }
     }
 
+    /**
+     * Deletes all orders, which contains specified book
+     * @param book book
+     * @throws DAOException default
+     */
     @Override
     public void deleteOrdersByBook(Book book) throws DAOException {
         ConnectionPool pool = null;
@@ -79,6 +94,11 @@ public class SQLOrderDao implements OrderDao {
         }
     }
 
+    /**
+     * Updates status of order with specified user-book pair
+     * @param order order
+     * @throws DAOException default
+     */
     @Override
     public void updateOrder(Order order) throws DAOException {
         ConnectionPool pool = null;
@@ -101,6 +121,11 @@ public class SQLOrderDao implements OrderDao {
         }
     }
 
+    /**
+     * Gets list of all orders
+     * @return list of all orders
+     * @throws DAOException default
+     */
     @Override
     public List<Order> getOrders() throws DAOException {
         List<Order> orders = new ArrayList<>();
@@ -132,6 +157,12 @@ public class SQLOrderDao implements OrderDao {
         return orders;
     }
 
+    /**
+     * Gets list of user orders
+     * @param user user
+     * @return list of user orders
+     * @throws DAOException default
+     */
     @Override
     public List<Order> getUserOrders(User user) throws DAOException {
         List<Order> orders = new ArrayList<>();

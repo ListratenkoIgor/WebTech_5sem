@@ -12,6 +12,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SQLBookDao implements BookDao {
+    /**
+     * Adds book to table
+     * @param book book
+     * @throws DAOException default
+     */
     @Override
     public void addBook(Book book) throws DAOException {
         ConnectionPool pool = null;
@@ -34,6 +39,11 @@ public class SQLBookDao implements BookDao {
         }
     }
 
+    /**
+     * Edit book from table
+     * @param book book
+     * @throws DAOException default
+     */
     @Override
     public void editBook(Book book) throws DAOException {
         ConnectionPool pool = null;
@@ -57,6 +67,11 @@ public class SQLBookDao implements BookDao {
         }
     }
 
+    /**
+     * Delete book from table
+     * @param book book
+     * @throws DAOException default
+     */
     @Override
     public void deleteBook(Book book) throws DAOException {
         ConnectionPool pool = null;
@@ -77,6 +92,12 @@ public class SQLBookDao implements BookDao {
         }
     }
 
+    /**
+     * Gets book from table by id
+     * @param id id of book
+     * @return book
+     * @throws DAOException default
+     */
     @Override
     public Book getBookById(int id) throws DAOException {
         var book = new Book();
@@ -106,6 +127,11 @@ public class SQLBookDao implements BookDao {
         return book;
     }
 
+    /**
+     * Gets all books from table
+     * @return list of books
+     * @throws DAOException default
+     */
     @Override
     public List<Book> getBooks() throws DAOException {
         List<Book> books = new ArrayList<>();
@@ -136,6 +162,12 @@ public class SQLBookDao implements BookDao {
         return books;
     }
 
+    /**
+     * Searches for books containing in title or author string substring, which passed as a parameter
+     * @param request substring for search
+     * @return list of appropriate books
+     * @throws DAOException default
+     */
     @Override
     public List<Book> searchBooks(String request) throws DAOException {
         List<Book> books = new ArrayList<>();

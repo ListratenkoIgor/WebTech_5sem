@@ -13,6 +13,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 public class SQLUserDao implements UserDao {
+    /**
+     * Finds user with appropriate login-password pair
+     * @param user existing user
+     * @return user if exists, else null
+     * @throws DAOException default
+     */
     @Override
     public User signIn(User user) throws DAOException {
         ConnectionPool pool = null;
@@ -41,6 +47,12 @@ public class SQLUserDao implements UserDao {
         return user;
     }
 
+    /**
+     * Adds new user
+     * @param user new user
+     * @return user
+     * @throws DAOException default
+     */
     @Override
     public User signUp(User user) throws DAOException {
         ConnectionPool pool = null;
@@ -71,6 +83,12 @@ public class SQLUserDao implements UserDao {
         return user;
     }
 
+    /**
+     * Finds user by login
+     * @param login user login
+     * @return user by login
+     * @throws DAOException default
+     */
     @Override
     public User getUserByLogin(String login) throws DAOException {
         User user = new User();
@@ -102,6 +120,11 @@ public class SQLUserDao implements UserDao {
         return user;
     }
 
+    /**
+     * Gets list of all users
+     * @return list of all users
+     * @throws DAOException default
+     */
     @Override
     public List<User> getUsers() throws DAOException {
         List<User> users = new ArrayList<>();
