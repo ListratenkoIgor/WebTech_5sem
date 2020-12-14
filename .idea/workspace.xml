@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d889ff5-bd56-4802-aba2-bdb2f9da2d7b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/SQLBookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/SQLBookDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/SQLOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/SQLOrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/SQLUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/SQLUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/ClientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/LibraryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/LibraryServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="2d889ff5-bd56-4802-aba2-bdb2f9da2d7b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +61,7 @@
       <workItem from="1607883522511" duration="2201000" />
       <workItem from="1607887417929" duration="1533000" />
       <workItem from="1607891915915" duration="1942000" />
-      <workItem from="1607898756646" duration="1031000" />
+      <workItem from="1607898756646" duration="1658000" />
     </task>
     <servers />
   </component>
